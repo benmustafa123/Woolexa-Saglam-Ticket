@@ -305,13 +305,6 @@ client.on("interactionCreate", async interaction => {
 
 client.on("interactionCreate", async interaction => {
 
-    const chnl = db.fetch(`ticketChannelUser_${interaction.guild.id}${interaction.channel.id}`);
-    const x = chnl.user;
-
-    const adam = await interaction.guild.members.cache.find(user => user.id === x);
-    const usr = db.fetch(`ticketUser_${x}${interaction.guild.id}`);
-
-
     if (interaction.values == 'secimiptal') {
         woolexasecim = new EmbedBuilder()
         .setAuthor({name: `Seçim iptal edildi`, iconURL: interaction.user.displayAvatarURL({ dynamic: true }) })
@@ -321,6 +314,13 @@ client.on("interactionCreate", async interaction => {
     }
     
     if (interaction.values == 'destekydk') {
+
+    const chnl = db.fetch(`ticketChannelUser_${interaction.guild.id}${interaction.channel.id}`);
+    const x = chnl.user;
+
+    const adam = await interaction.guild.members.cache.find(user => user.id === x);
+    const usr = db.fetch(`ticketUser_${x}${interaction.guild.id}`);
+
             let mesaj = interaction.channel.messages.cache.map(x => `${x.author.tag} : ${x.content}`).join("\n")
             await interaction.reply({files: [{attachment: Buffer.from(mesaj) , name: `${usr.whOpen}-destek-talebi.txt`}], ephemeral: true})
     }
