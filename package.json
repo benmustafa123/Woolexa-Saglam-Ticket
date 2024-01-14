@@ -1,12 +1,12 @@
 {
   "name": "wlx-shop-bot",
   "version": "8.8.8",
-  "description": "Woolexa Tarafından Kodlandı",
-  "main": "woolexa.js",
+  "description": "BenMustıe Tarafından Kodlandı",
+  "main": "BenMustıe.js",
   "scripts": {
-    "test": "node woolexa.js"
+    "test": "node BenMustıe.js"
   },
-  "author": "Woolexa",
+  "author": "BenMustıe",
   "license": "MIT",
   "dependencies": {
     "@discordjs/voice": "^0.16.0",
