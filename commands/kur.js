@@ -13,9 +13,9 @@ module.exports = {
 
         const woolexaticketembed = new EmbedBuilder()
         .setColor("DarkerGrey")
-        .setAuthor({name: "Woolexa Ticket Sistemi",})
+        .setAuthor({name: "Mlrp Ticket Sistemi",})
         .setDescription("Merhabalar buraya gelmiş olma sebebin ticket oluşturmaktan başka hiçbir şey olamaz\n\nAşağıda **Ticket Oluştur** butonuna basarak ticket oluşturabilirsin!")
-        .setFooter({text: "Developed By Woolexa"})
+        .setFooter({text: "Developed By Benmustie"})
         .setTimestamp()
 
         const ticketselect = new ActionRowBuilder()
@@ -41,7 +41,7 @@ module.exports = {
                     },
                     {
                         label: "Genel Sorun Bildirimi VB.",
-                        description: "Gennel soru bildirimi ve benzeri konularda destek almak için bu kategoriyi seç",
+                        description: "Genel soru bildirimi ve benzeri konularda destek almak için bu kategoriyi seç",
                         emoji: "⚙",
                         value: "genel"
                     },
