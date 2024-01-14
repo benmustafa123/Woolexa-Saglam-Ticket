@@ -13,9 +13,9 @@ module.exports = {
 
         const woolexaticketembed = new EmbedBuilder()
         .setColor("DarkerGrey")
-        .setAuthor({name: "Woolexa Ticket Sistemi",})
-        .setDescription("Merhabalar buraya gelmiş olma sebebin ticket oluşturmaktan başka hiçbir şey olamaz\n\nAşağıda **Ticket Oluştur** butonuna basarak ticket oluşturabilirsin!")
-        .setFooter({text: "Developed By Woolexa"})
+        .setAuthor({name: "MLRP Ticket Sistemi",})
+        .setDescription("Merhabalar buraya gelmiş olma sebebin ticket oluşturmaktan başka hiçbir şey olamaz Aşağıda **Ticket Oluştur** butonuna basarak ticket oluşturabilirsin!")
+        .setFooter({text: "Developed By BenMustie"})
         .setTimestamp()
 
         const ticketselect = new ActionRowBuilder()
